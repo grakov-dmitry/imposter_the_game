@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Импостер</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>window.GAME_DATA = {};</script>
+    <style>
+        :root {
+            --bg-color: var(--tg-theme-bg-color, #ffffff);
+            --secondary-bg: var(--tg-theme-secondary-bg-color, #f4f4f7);
+            --text-color: var(--tg-theme-text-color, #000000);
+            --hint-color: var(--tg-theme-hint-color, #999999);
+            --button-color: var(--tg-theme-button-color, #2481cc);
+            --button-text: var(--tg-theme-button-text-color, #ffffff);
+            --accent-red: #ff3b30;
+            --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            --border-radius: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: var(--tg-safe-area-inset-top, 0px) var(--tg-safe-area-inset-right, 0px) var(--tg-safe-area-inset-bottom, 0px) var(--tg-safe-area-inset-left, 0px);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        #app {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .screen {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            animation: screenIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .screen.active { display: flex; }
+
+        @keyframes screenIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 { font-size: 32px; font-weight: 800; text-align: center; margin: 20px 0 30px; letter-spacing: -0.5px; }
+        .subtitle { color: var(--hint-color); text-align: center; margin-top: -25px; margin-bottom: 30px; font-size: 14px; }
+
+        .card {
+            background-color: var(--secondary-bg);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .btn {
+            background: var(--button-color);
+            color: var(--button-text);
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 18px 24px;
+            font-size: 17px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .btn:active { transform: scale(0.97); opacity: 0.9; }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--button-color);
+            box-shadow: none;
+        }
+
+        .input-group label {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--hint-color);
+            margin-left: 12px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .player-count-control {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--secondary-bg);
+            padding: 8px;
+            border-radius: 20px;
+            margin-bottom: 24px;
+        }
+
+        .count-btn {
+            width: 48px;
+            height: 48px;
+            border-radius: 16px;
+            border: none;
+            background: var(--bg-color);
+            color: var(--text-color);
+            font-size: 24px;
+            box-shadow: var(--card-shadow);
+        }
+
+        #player-count-display { font-size: 24px; font-weight: 800; }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+
+        .category-item {
+            background: var(--secondary-bg);
+            padding: 16px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        .category-item span { font-size: 24px; }
+
+        .category-item.selected {
+            border-color: var(--button-color);
+            background: var(--bg-color);
+            box-shadow: var(--card-shadow);
+        }
+
+        .player-row {
+            display: flex;
+            align-items: center;
+            background: var(--secondary-bg);
+            border-radius: 12px;
+            padding: 4px 12px;
+            margin-bottom: 8px;
+        }
+
+        .player-row span { font-weight: 800; color: var(--button-color); margin-right: 12px; }
+
+        .player-row input {
+            background: transparent;
+            border: none;
+            padding: 12px 0;
+            color: var(--text-color);
+            font-size: 16px;
+            width: 100%;
+            outline: none;
+        }
+
+        .pass-info { text-align: center; margin: auto 0; }
+        .pass-name { font-size: 42px; font-weight: 900; color: var(--button-color); margin: 10px 0; }
+
+        .hold-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hold-btn {
+            width: 100%;
+            aspect-ratio: 1/1;
+            max-width: 280px;
+            border-radius: 50%;
+            background: var(--secondary-bg);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 20px;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 8px solid var(--bg-color);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hold-btn.active {
+            transform: scale(1.05);
+            background: var(--button-color);
+            color: var(--button-text);
+            box-shadow: 0 0 50px rgba(36, 129, 204, 0.4);
+        }
+
+        .imposter-text { color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+
+        .loading-overlay {
+            position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+            background: var(--bg-color); display: none; align-items: center;
+            justify-content: center; z-index: 1000;
+        }
+
+        .spinner {
+            width: 40px; height: 40px; border: 4px solid var(--secondary-bg);
+            border-top: 4px solid var(--button-color); border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        #next-player-btn { margin-top: 20px; width: 100%; }
+        
+        .footer-btns { margin-top: auto; display: flex; flex-direction: column; gap: 8px; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div id="loading" class="loading-overlay">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Menu -->
+        <div id="screen-menu" class="screen active">
+            <div style="margin: auto 0; text-align: center;">
+                <div style="font-size: 80px; margin-bottom: 20px;">🕵️‍♂️</div>
+                <h1>Импостер</h1>
+                <p class="subtitle">Узнай, кто среди вас лишний</p>
+                <button class="btn" style="width: 100%;" onclick="game.goToSettings()">Начать игру</button>
+            </div>
+        </div>
+
+        <!-- Settings -->
+        <div id="screen-settings" class="screen">
+            <h1>Настройки</h1>
+            
+            <div class="input-group">
+                <label>Категории</label>
+                <div id="categories" class="categories-grid"></div>
+            </div>
+
+            <div class="input-group">
+                <label>Игроки</label>
+                <div class="player-count-control">
+                    <button class="count-btn" onclick="game.changePlayerCount(-1)">−</button>
+                    <span id="player-count-display">3</span>
+                    <button class="count-btn" onclick="game.changePlayerCount(1)">+</button>
+                </div>
+                <div id="player-inputs" class="player-list"></div>
+            </div>
+
+            <div class="footer-btns">
+                <button class="btn" onclick="game.startGame()">Поехали 🚀</button>
+                <button class="btn btn-secondary" onclick="game.goToMenu()">Назад</button>
+            </div>
+        </div>
+
+        <!-- Pass Phone -->
+        <div id="screen-pass" class="screen">
+            <div class="pass-info">
+                <div style="font-size: 60px;">📱</div>
+                <h1>Передай телефон</h1>
+                <div class="pass-name" id="current-player-name"></div>
+                <p class="subtitle">Убедись, что другие не подглядывают</p>
+                <button class="btn" style="width: 100%;" onclick="game.goToRoleView()">Я готов</button>
+            </div>
+        </div>
+
+        <!-- Role View -->
+        <div id="screen-role" class="screen">
+            <h1>Твоя роль</h1>
+            <div class="hold-container">
+                <div id="hold-button" class="hold-btn">
+                    <div id="hold-icon" style="font-size: 40px; margin-bottom: 10px;">👁</div>
+                    УДЕРЖИВАЙ
+                </div>
+                <p id="role-hint" style="color: var(--hint-color); margin-top: 20px;">Нажми и держи, чтобы увидеть слово</p>
+                <button id="next-player-btn" class="btn" style="display: none;" onclick="game.nextTurn()">Понял, передаю ➔</button>
+            </div>
+        </div>
+
+        <!-- Discussion -->
+        <div id="screen-discussion" class="screen">
+            <div style="margin: auto 0; text-align: center;">
+                <div style="font-size: 80px; margin-bottom: 20px;">💬</div>
+                <h1>Обсуждение</h1>
+                <p style="font-size: 18px; line-height: 1.5;">Задавайте вопросы друг другу и попытайтесь вычислить <b>Импостера</b>!</p>
+            </div>
+            
+            <div class="footer-btns">
+                <button class="btn" onclick="game.restartGame()">Еще раз 🔄</button>
+                <button class="btn btn-secondary" onclick="game.goToMenu()">В меню</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
