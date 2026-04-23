@@ -48,6 +48,7 @@ class ImposterGame {
         this.secretWord = '';
         this.imposterIndex = -1;
         this.allWordsPool = [];
+        this.currentImageUrl = '';
 
         this.init();
     }
@@ -59,22 +60,52 @@ class ImposterGame {
         const holdBtn = document.getElementById('hold-button');
         const nextBtn = document.getElementById('next-player-btn');
         const roleHint = document.getElementById('role-hint');
+        const roleContent = document.getElementById('role-content');
 
         const showRole = () => {
             if (holdBtn.classList.contains('active')) return;
             tg.HapticFeedback.impactOccurred('medium');
             holdBtn.classList.add('active');
+            
             const isImposter = this.currentPlayerIndex === this.imposterIndex;
-            holdBtn.innerHTML = isImposter 
+            holdBtn.style.background = isImposter ? '#ff3b30' : 'var(--button-color)';
+            holdBtn.style.color = '#ffffff';
+
+            // Add image
+            if (!holdBtn.querySelector('.role-image')) {
+                const img = document.createElement('img');
+                img.className = 'role-image';
+                
+                let imgSrc = '';
+                if (isImposter) {
+                    imgSrc = 'https://loremflickr.com/400/400/spy,imposter,mystery';
+                } else {
+                    const wordObj = this.secretWord;
+                    const wordName = this.getWordName(wordObj);
+                    imgSrc = (typeof wordObj === 'object' && wordObj.image) 
+                        ? wordObj.image 
+                        : (this.currentImageUrl || `https://loremflickr.com/400/400/${encodeURIComponent(wordName)}`);
+                }
+                img.src = imgSrc;
+                holdBtn.prepend(img);
+            }
+
+            const wordDisplay = this.getWordName(this.secretWord);
+            roleContent.innerHTML = isImposter 
                 ? '<span class="imposter-text">ТЫ<br>ИМПОСТЕР!</span>' 
-                : `<span style="font-size: 14px; opacity: 0.8; font-weight: 400;">ТВОЕ СЛОВО:</span><br>${this.secretWord}`;
+                : `<span style="font-size: 14px; opacity: 0.9; font-weight: 400; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">ТВОЕ СЛОВО:</span><br><span style="text-shadow: 0 2px 10px rgba(0,0,0,0.5);">${wordDisplay}</span>`;
+            
             nextBtn.style.display = 'flex';
             roleHint.style.visibility = 'hidden';
         };
 
         const hideRole = () => {
             holdBtn.classList.remove('active');
-            holdBtn.innerHTML = '<div style="font-size: 40px; margin-bottom: 10px;">👁</div>УДЕРЖИВАЙ';
+            holdBtn.style.background = 'var(--secondary-bg)';
+            holdBtn.style.color = 'var(--text-color)';
+            roleContent.innerHTML = '<div style="font-size: 40px; margin-bottom: 10px;">👁</div>УДЕРЖИВАЙ';
+            const img = holdBtn.querySelector('.role-image');
+            if (img) img.remove();
         };
 
         holdBtn.addEventListener('mousedown', showRole);
@@ -84,6 +115,10 @@ class ImposterGame {
         holdBtn.addEventListener('mouseleave', hideRole);
 
         await this.loadRegistry();
+    }
+
+    getWordName(word) {
+        return typeof word === 'object' ? word.name : word;
     }
 
     showLoading(show) {
@@ -212,7 +247,7 @@ class ImposterGame {
         }
 
         tg.HapticFeedback.notificationOccurred('success');
-        this.generateSession();
+        await this.generateSession();
         this.showLoading(false);
     }
 
@@ -225,11 +260,38 @@ class ImposterGame {
         this.generateSession();
     }
 
-    generateSession() {
+    async generateSession() {
+        this.showLoading(true);
         this.secretWord = this.allWordsPool[Math.floor(Math.random() * this.allWordsPool.length)];
         this.imposterIndex = Math.floor(Math.random() * this.players.length);
         this.currentPlayerIndex = 0;
+        
+        const wordName = this.getWordName(this.secretWord);
+        
+        // Use pre-baked image or fetch from Wiki
+        if (typeof this.secretWord === 'object' && this.secretWord.image) {
+            this.currentImageUrl = this.secretWord.image;
+        } else {
+            this.currentImageUrl = await this.fetchWikiImage(wordName);
+        }
+        
+        this.showLoading(false);
         this.goToPassScreen();
+    }
+
+    async fetchWikiImage(word) {
+        try {
+            const response = await fetch(`https://ru.wikipedia.org/w/api.php?action=query&titles=${encodeURIComponent(word)}&prop=pageimages&format=json&pithumbsize=500&origin=*`);
+            const data = await response.json();
+            const pages = data.query.pages;
+            const pageId = Object.keys(pages)[0];
+            if (pageId !== "-1" && pages[pageId].thumbnail) {
+                return pages[pageId].thumbnail.source;
+            }
+        } catch (e) {
+            console.error("Wiki error:", e);
+        }
+        return '';
     }
 
     goToPassScreen() {
