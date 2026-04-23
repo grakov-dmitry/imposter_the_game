@@ -1,690 +1,690 @@
 window.GAME_DATA["LoL"] = [
     {
         "name": "Аврора",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aurora.png"
+        "image": "images/lol/Aurora.png"
     },
     {
         "name": "Азир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Azir.png"
+        "image": "images/lol/Azir.png"
     },
     {
         "name": "Акали",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Akali.png"
+        "image": "images/lol/Akali.png"
     },
     {
         "name": "Акшан",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Akshan.png"
+        "image": "images/lol/Akshan.png"
     },
     {
         "name": "Алистар",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Alistar.png"
+        "image": "images/lol/Alistar.png"
     },
     {
         "name": "Амбесса",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ambessa.png"
+        "image": "images/lol/Ambessa.png"
     },
     {
         "name": "Амуму",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Amumu.png"
+        "image": "images/lol/Amumu.png"
     },
     {
         "name": "Анивия",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Anivia.png"
+        "image": "images/lol/Anivia.png"
     },
     {
         "name": "Ари",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ahri.png"
+        "image": "images/lol/Ahri.png"
     },
     {
         "name": "Атрокс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aatrox.png"
+        "image": "images/lol/Aatrox.png"
     },
     {
         "name": "Аурелион Сол",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/AurelionSol.png"
+        "image": "images/lol/AurelionSol.png"
     },
     {
         "name": "Афелий",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Aphelios.png"
+        "image": "images/lol/Aphelios.png"
     },
     {
         "name": "Бард",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Bard.png"
+        "image": "images/lol/Bard.png"
     },
     {
         "name": "Бел'Вет",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Belveth.png"
+        "image": "images/lol/Belveth.png"
     },
     {
         "name": "Блицкранк",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Blitzcrank.png"
+        "image": "images/lol/Blitzcrank.png"
     },
     {
         "name": "Брайер",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Briar.png"
+        "image": "images/lol/Briar.png"
     },
     {
         "name": "Браум",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Braum.png"
+        "image": "images/lol/Braum.png"
     },
     {
         "name": "Брэнд",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Brand.png"
+        "image": "images/lol/Brand.png"
     },
     {
         "name": "Вай",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vi.png"
+        "image": "images/lol/Vi.png"
     },
     {
         "name": "Варвик",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Warwick.png"
+        "image": "images/lol/Warwick.png"
     },
     {
         "name": "Варус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Varus.png"
+        "image": "images/lol/Varus.png"
     },
     {
         "name": "Вейгар",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Veigar.png"
+        "image": "images/lol/Veigar.png"
     },
     {
         "name": "Вейн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vayne.png"
+        "image": "images/lol/Vayne.png"
     },
     {
         "name": "Векс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vex.png"
+        "image": "images/lol/Vex.png"
     },
     {
         "name": "Вел'Коз",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Velkoz.png"
+        "image": "images/lol/Velkoz.png"
     },
     {
         "name": "Виего",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Viego.png"
+        "image": "images/lol/Viego.png"
     },
     {
         "name": "Виктор",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Viktor.png"
+        "image": "images/lol/Viktor.png"
     },
     {
         "name": "Владимир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Vladimir.png"
+        "image": "images/lol/Vladimir.png"
     },
     {
         "name": "Волибир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Volibear.png"
+        "image": "images/lol/Volibear.png"
     },
     {
         "name": "Вуконг",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MonkeyKing.png"
+        "image": "images/lol/MonkeyKing.png"
     },
     {
         "name": "Галио",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Galio.png"
+        "image": "images/lol/Galio.png"
     },
     {
         "name": "Гангпланк",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gangplank.png"
+        "image": "images/lol/Gangplank.png"
     },
     {
         "name": "Гарен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Garen.png"
+        "image": "images/lol/Garen.png"
     },
     {
         "name": "Гвен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gwen.png"
+        "image": "images/lol/Gwen.png"
     },
     {
         "name": "Гекарим",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Hecarim.png"
+        "image": "images/lol/Hecarim.png"
     },
     {
         "name": "Гнар",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gnar.png"
+        "image": "images/lol/Gnar.png"
     },
     {
         "name": "Грагас",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Gragas.png"
+        "image": "images/lol/Gragas.png"
     },
     {
         "name": "Грейвз",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Graves.png"
+        "image": "images/lol/Graves.png"
     },
     {
         "name": "Дариус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Darius.png"
+        "image": "images/lol/Darius.png"
     },
     {
         "name": "Джакс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jax.png"
+        "image": "images/lol/Jax.png"
     },
     {
         "name": "Джарван IV",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/JarvanIV.png"
+        "image": "images/lol/JarvanIV.png"
     },
     {
         "name": "Джейс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jayce.png"
+        "image": "images/lol/Jayce.png"
     },
     {
         "name": "Джин",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jhin.png"
+        "image": "images/lol/Jhin.png"
     },
     {
         "name": "Джинкс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Jinx.png"
+        "image": "images/lol/Jinx.png"
     },
     {
         "name": "Диана",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Diana.png"
+        "image": "images/lol/Diana.png"
     },
     {
         "name": "Доктор Мундо",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/DrMundo.png"
+        "image": "images/lol/DrMundo.png"
     },
     {
         "name": "Дрейвен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Draven.png"
+        "image": "images/lol/Draven.png"
     },
     {
         "name": "Ёнэ",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yone.png"
+        "image": "images/lol/Yone.png"
     },
     {
         "name": "Жанна",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Janna.png"
+        "image": "images/lol/Janna.png"
     },
     {
         "name": "Заахен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zaahen.png"
+        "image": "images/lol/Zaahen.png"
     },
     {
         "name": "Зайра",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zyra.png"
+        "image": "images/lol/Zyra.png"
     },
     {
         "name": "Зак",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zac.png"
+        "image": "images/lol/Zac.png"
     },
     {
         "name": "Зед",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zed.png"
+        "image": "images/lol/Zed.png"
     },
     {
         "name": "Зерат",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Xerath.png"
+        "image": "images/lol/Xerath.png"
     },
     {
         "name": "Зери",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zeri.png"
+        "image": "images/lol/Zeri.png"
     },
     {
         "name": "Зиггс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ziggs.png"
+        "image": "images/lol/Ziggs.png"
     },
     {
         "name": "Зилеан",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zilean.png"
+        "image": "images/lol/Zilean.png"
     },
     {
         "name": "Зои",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Zoe.png"
+        "image": "images/lol/Zoe.png"
     },
     {
         "name": "Иверн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ivern.png"
+        "image": "images/lol/Ivern.png"
     },
     {
         "name": "Иллаой",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Illaoi.png"
+        "image": "images/lol/Illaoi.png"
     },
     {
         "name": "Ирелия",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Irelia.png"
+        "image": "images/lol/Irelia.png"
     },
     {
         "name": "Йорик",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yorick.png"
+        "image": "images/lol/Yorick.png"
     },
     {
         "name": "К'Санте",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/KSante.png"
+        "image": "images/lol/KSante.png"
     },
     {
         "name": "Ка'Зикс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Khazix.png"
+        "image": "images/lol/Khazix.png"
     },
     {
         "name": "Каин",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kayn.png"
+        "image": "images/lol/Kayn.png"
     },
     {
         "name": "Кай'Са",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kaisa.png"
+        "image": "images/lol/Kaisa.png"
     },
     {
         "name": "Калиста",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kalista.png"
+        "image": "images/lol/Kalista.png"
     },
     {
         "name": "Камилла",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Camille.png"
+        "image": "images/lol/Camille.png"
     },
     {
         "name": "Карма",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Karma.png"
+        "image": "images/lol/Karma.png"
     },
     {
         "name": "Картус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Karthus.png"
+        "image": "images/lol/Karthus.png"
     },
     {
         "name": "Кассадин",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kassadin.png"
+        "image": "images/lol/Kassadin.png"
     },
     {
         "name": "Кассиопея",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Cassiopeia.png"
+        "image": "images/lol/Cassiopeia.png"
     },
     {
         "name": "Катарина",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Katarina.png"
+        "image": "images/lol/Katarina.png"
     },
     {
         "name": "Квинн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Quinn.png"
+        "image": "images/lol/Quinn.png"
     },
     {
         "name": "Кейл",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kayle.png"
+        "image": "images/lol/Kayle.png"
     },
     {
         "name": "Кейтлин",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Caitlyn.png"
+        "image": "images/lol/Caitlyn.png"
     },
     {
         "name": "Кеннен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kennen.png"
+        "image": "images/lol/Kennen.png"
     },
     {
         "name": "Киана",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Qiyana.png"
+        "image": "images/lol/Qiyana.png"
     },
     {
         "name": "Киндред",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kindred.png"
+        "image": "images/lol/Kindred.png"
     },
     {
         "name": "Клед",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Kled.png"
+        "image": "images/lol/Kled.png"
     },
     {
         "name": "Ког'Мао",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/KogMaw.png"
+        "image": "images/lol/KogMaw.png"
     },
     {
         "name": "Корки",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Corki.png"
+        "image": "images/lol/Corki.png"
     },
     {
         "name": "Ксин Жао",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/XinZhao.png"
+        "image": "images/lol/XinZhao.png"
     },
     {
         "name": "Ле Блан",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Leblanc.png"
+        "image": "images/lol/Leblanc.png"
     },
     {
         "name": "Леона",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Leona.png"
+        "image": "images/lol/Leona.png"
     },
     {
         "name": "Ли Син",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/LeeSin.png"
+        "image": "images/lol/LeeSin.png"
     },
     {
         "name": "Лиллия",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lillia.png"
+        "image": "images/lol/Lillia.png"
     },
     {
         "name": "Лиссандра",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lissandra.png"
+        "image": "images/lol/Lissandra.png"
     },
     {
         "name": "Лулу",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lulu.png"
+        "image": "images/lol/Lulu.png"
     },
     {
         "name": "Люкс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lux.png"
+        "image": "images/lol/Lux.png"
     },
     {
         "name": "Люциан",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Lucian.png"
+        "image": "images/lol/Lucian.png"
     },
     {
         "name": "Мальзахар",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Malzahar.png"
+        "image": "images/lol/Malzahar.png"
     },
     {
         "name": "Мальфит",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Malphite.png"
+        "image": "images/lol/Malphite.png"
     },
     {
         "name": "Маокай",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Maokai.png"
+        "image": "images/lol/Maokai.png"
     },
     {
         "name": "Мастер Йи",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MasterYi.png"
+        "image": "images/lol/MasterYi.png"
     },
     {
         "name": "Милио",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Milio.png"
+        "image": "images/lol/Milio.png"
     },
     {
         "name": "Мисс Фортуна",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/MissFortune.png"
+        "image": "images/lol/MissFortune.png"
     },
     {
         "name": "Моргана",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Morgana.png"
+        "image": "images/lol/Morgana.png"
     },
     {
         "name": "Мордекайзер",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Mordekaiser.png"
+        "image": "images/lol/Mordekaiser.png"
     },
     {
         "name": "Мэл",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Mel.png"
+        "image": "images/lol/Mel.png"
     },
     {
         "name": "Наафири",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Naafiri.png"
+        "image": "images/lol/Naafiri.png"
     },
     {
         "name": "Нами",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nami.png"
+        "image": "images/lol/Nami.png"
     },
     {
         "name": "Насус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nasus.png"
+        "image": "images/lol/Nasus.png"
     },
     {
         "name": "Наутилус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nautilus.png"
+        "image": "images/lol/Nautilus.png"
     },
     {
         "name": "Нидали",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nidalee.png"
+        "image": "images/lol/Nidalee.png"
     },
     {
         "name": "Нико",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Neeko.png"
+        "image": "images/lol/Neeko.png"
     },
     {
         "name": "Нила",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nilah.png"
+        "image": "images/lol/Nilah.png"
     },
     {
         "name": "Ноктюрн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nocturne.png"
+        "image": "images/lol/Nocturne.png"
     },
     {
         "name": "Нуну и Виллумп",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Nunu.png"
+        "image": "images/lol/Nunu.png"
     },
     {
         "name": "Олаф",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Olaf.png"
+        "image": "images/lol/Olaf.png"
     },
     {
         "name": "Орианна",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Orianna.png"
+        "image": "images/lol/Orianna.png"
     },
     {
         "name": "Орн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ornn.png"
+        "image": "images/lol/Ornn.png"
     },
     {
         "name": "Пайк",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Pyke.png"
+        "image": "images/lol/Pyke.png"
     },
     {
         "name": "Пантеон",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Pantheon.png"
+        "image": "images/lol/Pantheon.png"
     },
     {
         "name": "Поппи",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Poppy.png"
+        "image": "images/lol/Poppy.png"
     },
     {
         "name": "Райз",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ryze.png"
+        "image": "images/lol/Ryze.png"
     },
     {
         "name": "Рамбл",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rumble.png"
+        "image": "images/lol/Rumble.png"
     },
     {
         "name": "Раммус",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rammus.png"
+        "image": "images/lol/Rammus.png"
     },
     {
         "name": "Рек'Сай",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/RekSai.png"
+        "image": "images/lol/RekSai.png"
     },
     {
         "name": "Релл",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rell.png"
+        "image": "images/lol/Rell.png"
     },
     {
         "name": "Рената Гласк",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Renata.png"
+        "image": "images/lol/Renata.png"
     },
     {
         "name": "Ренгар",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rengar.png"
+        "image": "images/lol/Rengar.png"
     },
     {
         "name": "Ренектон",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Renekton.png"
+        "image": "images/lol/Renekton.png"
     },
     {
         "name": "Ривен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Riven.png"
+        "image": "images/lol/Riven.png"
     },
     {
         "name": "Рэйкан",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Rakan.png"
+        "image": "images/lol/Rakan.png"
     },
     {
         "name": "Сайлас",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sylas.png"
+        "image": "images/lol/Sylas.png"
     },
     {
         "name": "Самира",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Samira.png"
+        "image": "images/lol/Samira.png"
     },
     {
         "name": "Свейн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Swain.png"
+        "image": "images/lol/Swain.png"
     },
     {
         "name": "Седжуани",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sejuani.png"
+        "image": "images/lol/Sejuani.png"
     },
     {
         "name": "Сенна",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Senna.png"
+        "image": "images/lol/Senna.png"
     },
     {
         "name": "Серафина",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Seraphine.png"
+        "image": "images/lol/Seraphine.png"
     },
     {
         "name": "Сетт",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sett.png"
+        "image": "images/lol/Sett.png"
     },
     {
         "name": "Сивир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sivir.png"
+        "image": "images/lol/Sivir.png"
     },
     {
         "name": "Синджед",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Singed.png"
+        "image": "images/lol/Singed.png"
     },
     {
         "name": "Синдра",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Syndra.png"
+        "image": "images/lol/Syndra.png"
     },
     {
         "name": "Сион",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sion.png"
+        "image": "images/lol/Sion.png"
     },
     {
         "name": "Скарнер",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Skarner.png"
+        "image": "images/lol/Skarner.png"
     },
     {
         "name": "Смолдер",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Smolder.png"
+        "image": "images/lol/Smolder.png"
     },
     {
         "name": "Сона",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Sona.png"
+        "image": "images/lol/Sona.png"
     },
     {
         "name": "Сорака",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Soraka.png"
+        "image": "images/lol/Soraka.png"
     },
     {
         "name": "Таам Кенч",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/TahmKench.png"
+        "image": "images/lol/TahmKench.png"
     },
     {
         "name": "Талия",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Taliyah.png"
+        "image": "images/lol/Taliyah.png"
     },
     {
         "name": "Талон",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Talon.png"
+        "image": "images/lol/Talon.png"
     },
     {
         "name": "Тарик",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Taric.png"
+        "image": "images/lol/Taric.png"
     },
     {
         "name": "Твистед Фэйт",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/TwistedFate.png"
+        "image": "images/lol/TwistedFate.png"
     },
     {
         "name": "Твич",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Twitch.png"
+        "image": "images/lol/Twitch.png"
     },
     {
         "name": "Тимо",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Teemo.png"
+        "image": "images/lol/Teemo.png"
     },
     {
         "name": "Трандл",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Trundle.png"
+        "image": "images/lol/Trundle.png"
     },
     {
         "name": "Треш",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Thresh.png"
+        "image": "images/lol/Thresh.png"
     },
     {
         "name": "Триндамир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Tryndamere.png"
+        "image": "images/lol/Tryndamere.png"
     },
     {
         "name": "Тристана",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Tristana.png"
+        "image": "images/lol/Tristana.png"
     },
     {
         "name": "Удир",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Udyr.png"
+        "image": "images/lol/Udyr.png"
     },
     {
         "name": "Ургот",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Urgot.png"
+        "image": "images/lol/Urgot.png"
     },
     {
         "name": "Фиддлстикс",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fiddlesticks.png"
+        "image": "images/lol/Fiddlesticks.png"
     },
     {
         "name": "Физз",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fizz.png"
+        "image": "images/lol/Fizz.png"
     },
     {
         "name": "Фиора",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Fiora.png"
+        "image": "images/lol/Fiora.png"
     },
     {
         "name": "Хвэй",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Hwei.png"
+        "image": "images/lol/Hwei.png"
     },
     {
         "name": "Хеймердингер",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Heimerdinger.png"
+        "image": "images/lol/Heimerdinger.png"
     },
     {
         "name": "Чо'Гат",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Chogath.png"
+        "image": "images/lol/Chogath.png"
     },
     {
         "name": "Шако",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shaco.png"
+        "image": "images/lol/Shaco.png"
     },
     {
         "name": "Шая",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Xayah.png"
+        "image": "images/lol/Xayah.png"
     },
     {
         "name": "Шен",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shen.png"
+        "image": "images/lol/Shen.png"
     },
     {
         "name": "Шивана",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Shyvana.png"
+        "image": "images/lol/Shyvana.png"
     },
     {
         "name": "Эвелинн",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Evelynn.png"
+        "image": "images/lol/Evelynn.png"
     },
     {
         "name": "Эзреаль",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ezreal.png"
+        "image": "images/lol/Ezreal.png"
     },
     {
         "name": "Экко",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ekko.png"
+        "image": "images/lol/Ekko.png"
     },
     {
         "name": "Элиза",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Elise.png"
+        "image": "images/lol/Elise.png"
     },
     {
         "name": "Энни",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Annie.png"
+        "image": "images/lol/Annie.png"
     },
     {
         "name": "Эш",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Ashe.png"
+        "image": "images/lol/Ashe.png"
     },
     {
         "name": "Юми",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yuumi.png"
+        "image": "images/lol/Yuumi.png"
     },
     {
         "name": "Юнара",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yunara.png"
+        "image": "images/lol/Yunara.png"
     },
     {
         "name": "Ясуо",
-        "image": "https://ddragon.leagueoflegends.com/cdn/16.8.1/img/champion/Yasuo.png"
+        "image": "images/lol/Yasuo.png"
     }
 ];
