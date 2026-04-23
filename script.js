@@ -16,7 +16,8 @@ const CATEGORY_ICONS = {
     "LoL": "🔷",
     "Блич": "⚔️",
     "Ван пис": "🏴‍☠️",
-    "Наруто": "🍃"
+    "Наруто": "🍃",
+    "Clash Royale": "👑"
 };
 
 const REGISTRY_FALLBACK = [
@@ -35,7 +36,8 @@ const REGISTRY_FALLBACK = [
     { name: "LoL", file: "lol" },
     { name: "Блич", file: "bleach" },
     { name: "Ван пис", file: "one_piece" },
-    { name: "Наруто", file: "naruto" }
+    { name: "Наруто", file: "naruto" },
+    { name: "Clash Royale", file: "clash_royale" }
 ];
 
 class ImposterGame {

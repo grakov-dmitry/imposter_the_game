@@ -14,5 +14,6 @@ window.GAME_REGISTRY = [
     { name: "LoL", file: "lol" },
     { name: "Блич", file: "bleach" },
     { name: "Ван пис", file: "one_piece" },
-    { name: "Наруто", file: "naruto" }
+    { name: "Наруто", file: "naruto" },
+    { name: "Clash Royale", file: "clash_royale" }
 ];
